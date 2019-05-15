@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include partials/head %>
+</head>
+
+<body>
+    <header>
+        <% include partials/header %>
+    </header>
+    <main>
+        <section>
+            <table>
+                <thead>
+                    <th>
+                    <td>name</td>
+                    <td>mood_type</td>
+                    <td>currentDate</td>
+                    <td>message</td>
+                    </th>
+                </thead>
+                <tbody>
+                    <% for(var i=0; i < data.length; i++) { %>
+                    <tr>
+                        <td><%= data[i].name %></td>
+                        <td><%= data[i].mood_type %></td>
+                        <td><%= data[i].currentDate %></td>
+                        <td><%= data[i].message %></td>
+                    </tr>
+                    <%}%> 
+                </tbody>       
+            </table>
+            
+        </section>
+    </main>    
+</body>
+
+</html>
