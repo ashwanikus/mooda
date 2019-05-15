@@ -12,13 +12,13 @@ var app = express();
 
 const mongoose = require("mongoose");
 //const mongoDB = process.env.MONGODB_URI || "mongodb://10.202.229.97:27017/HappyIndex";
-const mongoDB = process.env.MONGODB_URI || "mongodb://localhost:27017/HappyIndex";
+//const mongoDB = process.env.MONGODB_URI || "mongodb://localhost:27017/HappyIndex";
 //const mongoDB = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/HappyIndex";
 
-mongoose.connect(mongoDB, { useNewUrlParser: true });
-mongoose.Promise = global.Promise;
-let db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+//mongoose.connect(mongoDB, { useNewUrlParser: true });
+//mongoose.Promise = global.Promise;
+//let db = mongoose.connection;
+//db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 
 // view engine setup
