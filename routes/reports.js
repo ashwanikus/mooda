@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
     //} else {
       //if (result.length >= 1) {
         //res.end(JSON.stringify(result));
-        res.render('reports', { title: 'Reports', data: result });
+        res.render('reports', { title: 'Reports' });
       //} else {
         //res.end(JSON.stringify(new Error("user is not found!")));
       //}

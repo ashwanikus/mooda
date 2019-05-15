@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
     //if (err) {
       //res.render('error', { message: err, error: { status: "error", stack: "stack" } });
     //} else {
-      res.render('index', { title: 'Express', moodtypes: moodtypes });
+      res.render('index', { title: 'Express' });
     //}
   //});
 });

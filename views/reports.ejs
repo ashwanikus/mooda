@@ -10,30 +10,21 @@
         <% include partials/header %>
     </header>
     <main>
-        <section>
+        <div class="container">
             <table>
                 <thead>
-                    <th>
-                    <td>name</td>
-                    <td>mood_type</td>
-                    <td>currentDate</td>
-                    <td>message</td>
-                    </th>
+                    <th>name</th>
+                    <th>mood_type</th>
+                    <th>currentDate</th>
+                    <th>message</th>
                 </thead>
                 <tbody>
-                    <% for(var i=0; i < data.length; i++) { %>
-                    <tr>
-                        <td><%= data[i].name %></td>
-                        <td><%= data[i].mood_type %></td>
-                        <td><%= data[i].currentDate %></td>
-                        <td><%= data[i].message %></td>
-                    </tr>
-                    <%}%> 
-                </tbody>       
+
+                </tbody>
             </table>
-            
-        </section>
-    </main>    
+
+        </div>
+    </main>
 </body>
 
 </html>
